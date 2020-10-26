@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/index.js" }],
+  "env": {
+    "DB_USER": "@platzi-videos-db-user",
+    "DB_PASSWORD": "@platzi-videos-db-password",
+    "DB_HOST": "@platzi-videos-db-host",
+    "DB_NAME": "@platzi-movies-cypress-db_name",
+    "AUTH_JWT_SECRET": "@platzivideo-auth-jwt-secret",
+    "PUBLIC_API_KEY_TOKEN": "@platzivideo-public-api-key-token",
+    "ADMIN_API_KEY_TOKEN": "@platzivideo-admin-api-key-token"
+  }
+}
